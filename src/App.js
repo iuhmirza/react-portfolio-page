@@ -1,21 +1,5 @@
 import './App.css';
-
-function Navbar() {
-  const pages = [
-    'home', 'projects', 'contact', 'experience'
-  ]
-  return (
-    <div>
-      {pages.map(page => <NavbarButton link={page}/>)}
-    </div>
-  )
-}
-
-function NavbarButton({link}) {
-  return (
-    <button>{link}</button>
-  )
-}
+import Navbar from './components/Navbar';
 
 function App() {
   return (

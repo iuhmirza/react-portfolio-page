@@ -1,0 +1,25 @@
+.Navbar {
+  background-color: hsla(0, 0%, 0%, 50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.NavbarButton {
+  width: 10%;
+  color: white;
+  background-color: hsl(0, 0%, 5%);
+  padding: 0;
+  border: none;
+  border-width: 0;
+  border-style: none;
+  border-color:aliceblue;
+}
+
+.NavbarButton:hover {
+  background-color: hsl(0, 0%, 10%);
+}
+
+.NavbarButton:active {
+  background-color: hsl(0, 0%, 15%)
+}
