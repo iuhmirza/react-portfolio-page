@@ -9,3 +9,33 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.Home {
+  height: 50%;
+  width: 50%;
+  background-color: aliceblue;
+}
+
+.Skills {
+  height: 50%;
+  width: 50%;
+  background-color: crimson;
+}
+
+.Projects {
+  height: 50%;
+  width: 50%;
+  background-color: darkgreen;
+}
+
+.Contact {
+  height: 50%;
+  width: 50%;
+  background-color: lightblue;
+}
+
+.Experience {
+  height: 50%;
+  width: 50%;
+  background-color: mediumblue;
+}

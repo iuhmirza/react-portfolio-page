@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react'
 import Navbar from './components/Navbar';
+import Pages from './components/Pages';
 
 function App() {
   const pages = [
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Navbar pages={pages} updatePage={setSelected} selectedPage={selected}/>
-      <p>Hello world!</p>
+      <Pages selectedPage={selected}/>
     </div>
   );
 }
