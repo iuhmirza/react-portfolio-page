@@ -1,22 +1,17 @@
 import './Navbar.css'
-import { useState } from 'react'
 
-function Navbar() {
-  const pages = [
-    'home', 'skills', 'projects', 'contact', 'experience'
-  ]
-
-  const [selected, setSelected] = useState('home')
+function Navbar( { pages, updatePage, selectedPage}) {
+  
 
   const selectedStyle = {
     backgroundColor: 'hsl(0, 0%, 15%)'
   }
 
   const isSelected = page => {
-    if(page===selected) {
+    if(page===selectedPage) {
       return (<button className='NavbarButton' style={selectedStyle}>{page}</button>)
     } else {
-      return <button className='NavbarButton' onClick={() => setSelected(page)}>{page}</button>
+      return <button className='NavbarButton' onClick={() => updatePage(page)}>{page}</button>
     }
   }
 
