@@ -1,20 +1,16 @@
-import './App.css';
-import { useState } from 'react'
-import Navbar from './components/Navbar';
-import Pages from './components/Pages';
+import './App.scss';
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+
 
 function App() {
-  const pages = [
-    'home', 'skills', 'projects', 'contact', 'experience'
-  ]
-
-  const [selected, setSelected] = useState('home')
 
   return (
-    <div className="App">
-      <Navbar pages={pages} updatePage={setSelected} selectedPage={selected}/>
-      <Pages selectedPage={selected}/>
-    </div>
+    <>
+    <Routes>
+      <Route path='/' element={<Layout />} />
+    </Routes>
+    </>
   );
 }
 
